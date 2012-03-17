@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Photo Gallery</title>
+        <link rel="stylesheet" href="css/jd.gallery.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="scripts/mootools-1.2.1-core-yc.js"></script>
+        <script type="text/javascript" src="scripts/mootools-1.2-more.js"></script>
+        <script type="text/javascript" src="scripts/jd.gallery-2.1dev.js"></script>
+        <script type="text/javascript" src="scripts/picasa.gallery.js"></script>
+    </head>
+    <body>  
+        <div id="myGallery"></div>
+        <script type="text/javascript"><!--
+            // Get userprefs
+            var prefs        = new gadgets.Prefs();
+            var user         = prefs.getString("user");
+            var album        = prefs.getString("album");
+            var maxres       = prefs.getString("maxres"); // 0 - for all;
+            var timed        = prefs.getBool("timed");
+            var delay        = prefs.getString("delay");
+            var showInfopane = prefs.getBool("showInfopane");
+            var showCarousel = prefs.getBool("showCarousel");
+            var showArrows   = prefs.getBool("showArrows");
+            var authkey      = prefs.getString("authkey"); // only for private albums
+            var url = 'http://picasaweb.google.com/data/feed/api/user/' + user + '/album/' + album + '?kind=photo&alt=json-in-script&callback=renderer&access=public&start-index=1';
+
+            if (maxres && maxres != 0)    url = url + '&max-results=' + maxres;
+            if (authkey && authkey != '') url = url + '&authkey='     + authkey;
+            loadJS(url);
+        // --></script>
+    </body>
+</html>
+
+
