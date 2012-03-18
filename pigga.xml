@@ -51,10 +51,10 @@
 <Content type="html"><![CDATA[
 <div id="myGallery"></div>
 <link rel="stylesheet" href="http://pigga.googlecode.com/hg/css/jd.gallery.css" type="text/css" media="screen" />
-<script type="text/javascript" src="http://pigga.googlecode.com/hg/scripts/mootools-1.2.1-core-yc.js"></script>
-<script type="text/javascript" src="http://pigga.googlecode.com/hg/scripts/mootools-1.2-more.js"></script>
-<script type="text/javascript" src="http://pigga.googlecode.com/hg/scripts/jd.gallery-2.1dev.js"></script>
-<script type="text/javascript" src="http://pigga.googlecode.com/hg/scripts/picasa.gallery.js"></script>
+<script type="text/javascript" src="https://pigga.googlecode.com/hg/scripts/mootools-1.2.1-core-yc.js"></script>
+<script type="text/javascript" src="https://pigga.googlecode.com/hg/scripts/mootools-1.2-more.js"></script>
+<script type="text/javascript" src="https://pigga.googlecode.com/hg/scripts/jd.gallery-2.1dev.js"></script>
+<script type="text/javascript" src="https://pigga.googlecode.com/hg/scripts/picasa.gallery.js"></script>
 <script type="text/javascript"><!--
     // Get userprefs
     var prefs        = new gadgets.Prefs();
