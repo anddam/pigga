@@ -50,7 +50,7 @@
     <UserPref name="showArrows"   datatype="bool"   display_name="show arrows"     default_value="true" />
 <Content type="html"><![CDATA[
 <div id="myGallery"></div>
-<link rel="stylesheet" href="http://pigga.googlecode.com/hg/css/jd.gallery.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="https://pigga.googlecode.com/hg/css/jd.gallery.css" type="text/css" media="screen" />
 <script type="text/javascript" src="https://pigga.googlecode.com/hg/scripts/mootools-1.2.1-core-yc.js"></script>
 <script type="text/javascript" src="https://pigga.googlecode.com/hg/scripts/mootools-1.2-more.js"></script>
 <script type="text/javascript" src="https://pigga.googlecode.com/hg/scripts/jd.gallery-2.1dev.js"></script>
@@ -67,7 +67,7 @@
     var showCarousel = prefs.getBool("showCarousel");
     var showArrows   = prefs.getBool("showArrows");
     var authkey      = prefs.getString("authkey"); // only for private albums
-    var url = 'http://picasaweb.google.com/data/feed/api/user/' + user + '/album/' + album + '?kind=photo&alt=json-in-script&callback=renderer&access=public&start-index=1';
+    var url = 'https://picasaweb.google.com/data/feed/api/user/' + user + '/album/' + album + '?kind=photo&alt=json-in-script&callback=renderer&access=public&start-index=1';
 
     if (maxres && maxres != 0)    url = url + '&max-results=' + maxres;
     if (authkey && authkey != '') url = url + '&authkey='     + authkey;
